@@ -6,7 +6,7 @@ module.exports = function(){
     container.diceModel = require("../model/dice");
     container.gameModel = require("../model/game");
     
-    var boardFactoryDef = require("../factory/board-factory");
+    var boardFactoryDef = require("./mocks/board-factory-mock");
     container.boardFactory = new boardFactoryDef(container.diceModel);
     
     var gameRepoDef = require("../repository/game-repository");
@@ -16,7 +16,7 @@ module.exports = function(){
     container.boardWordService = new boardWordServiceDef();
     
     var dictionaryServiceDef = require("../service/dictionary-service");
-    container.dictionaryService = new dictionaryServiceDef("dictionary.txt");
+    container.dictionaryService = new dictionaryServiceDef("test-dictionary.txt");
     
     var wordScoreServiceDef = require("../service/word-score-service");
     container.wordScoreService = new wordScoreServiceDef();

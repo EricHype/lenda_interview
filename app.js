@@ -14,7 +14,9 @@ module.exports = function(container){
   router.use(express.static(path.resolve(__dirname, 'client')));
   
   //routes
-  //require('./routes/books-routes')(router, container.booksService, container.booksErrors);
+  require('./routes/game-routes')(router, container.gameRepository, 
+    container.dictionaryService, container.boardWordService, 
+    container.wordScoreService);
   
   
   //catch all route
