@@ -20,7 +20,19 @@ meets the specs, and works with the provided UI.
 2. run "npm install"
 3. node bin/www
 
-## 3) Ideas for further enhancement/refactoring
+ 
+## 3) Running tests
+
+Tests can be run by using mocha on any -test file. 
+For convenience there are a few gulp tasks defined:
+*gulp factoryTests
+*gulp routeTests
+*gulp serviceTests
+
+There's also a task to run all of them, but it's being a bit spotty at times as far as reporting success/failure.
+*gulp test
+
+## 4) Ideas for further enhancement/refactoring
 
 Most of the code found in the post to /api/v1/game/:id is done in a blocking 
 fashion, given some more time I'd refactor it to be all async. I don't like
