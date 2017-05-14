@@ -25,12 +25,12 @@ meets the specs, and works with the provided UI.
 
 Tests can be run by using mocha on any -test file. 
 For convenience there are a few gulp tasks defined:
-*gulp factoryTests
-*gulp routeTests
-*gulp serviceTests
+* gulp factoryTests
+* gulp routeTests
+* gulp serviceTests
 
 There's also a task to run all of them, but it's being a bit spotty at times as far as reporting success/failure.
-*gulp test
+* gulp test
 
 ## 4) Ideas for further enhancement/refactoring
 
