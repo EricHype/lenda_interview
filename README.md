@@ -19,3 +19,15 @@ meets the specs, and works with the provided UI.
 1. Clone the repository
 2. run "npm install"
 3. node bin/www
+
+## 3) Ideas for further enhancement/refactoring
+
+Most of the code found in the post to /api/v1/game/:id is done in a blocking 
+fashion, given some more time I'd refactor it to be all async. I don't like
+having to parse the dictionary every start up, I'd like to move that to a more 
+durable data store.
+
+There is also a bug possible where a valid word could be rejected if the 
+dictionary is still being built. Being able to put the service is a "booting up"
+state would help.
+
