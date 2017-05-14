@@ -36,7 +36,7 @@ describe("board word service", function() {
         done();
     });
     
-    it("should find a word that almost exist", function(done){
+    it("should not find a word that almost exists", function(done){
         var boardArray=["ABOAA", "AAAAA", "AARTA", "AATAA", "AAAAA"];
         var doesExist = service.isWordValid(boardArray, "BOARD");
         assert.equal(false, doesExist);
