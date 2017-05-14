@@ -1,22 +1,21 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
 
+# Lenda interview problem
+-----
+## 1) Problem definition:
 
-Welcome to your Node.js project on Cloud9 IDE!
+You will be creating a server-side API meeting the requirements below. Feel free
+to use any Java framework and libraries that you feel are appropriate. 
+Submit your work as a zip or tar archive, or as a shared git repository. 
+It should be self-contained and you should include a README file with 
+instructions on how to run the code. This exercise should not take more than xx 
+minutes to complete, however we allocate xx hours and ask that you submit what 
+you have completed at the xx-hour mark. This is your chance to show us at your 
+best so we are looking for high quality code that is readable and maintainable, 
+meets the specs, and works with the provided UI.
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+## 2) How to run it
 
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+1. Clone the repository
+2. run "npm install"
+3. node bin/www
