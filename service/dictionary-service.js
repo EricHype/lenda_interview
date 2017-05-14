@@ -14,7 +14,7 @@ function DictionaryService(dictionaryFilename){
     });
     
     rd.on('line', function(line) {
-        console.log(line);
+        //console.log(line);
         wordsMap.set(line.trim(), true);
         wordsSeen++;
     }).on('close', () => {
