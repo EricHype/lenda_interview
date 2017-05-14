@@ -43,3 +43,8 @@ There is also a bug possible where a valid word could be rejected if the
 dictionary is still being built. Being able to put the service is a "booting up"
 state would help.
 
+## 5) Routes
+
+    POST - /api/v1/game/:id - add a move to a game
+    GET - /api/v1/game/:id - get a game's information
+    POST - /api/v1/game - create a new game
